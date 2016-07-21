@@ -1,3 +1,6 @@
 language: perl
 before_install:
   - cpanm Dist::Zilla
+  - dzil listdeps | cpanm --quite --notest
+script:
+  - dzil test
