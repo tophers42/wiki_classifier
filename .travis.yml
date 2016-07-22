@@ -1,6 +1,7 @@
 language: perl
 before_install:
   - cpanm Dist::Zilla
+  - cpanm HTML::FormatText
 install:
   - dzil listdeps | cpanm --quiet --notest
 script:
